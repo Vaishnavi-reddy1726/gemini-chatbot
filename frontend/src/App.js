@@ -6,7 +6,7 @@ import ChatWindow from "./components/ChatWindow";
 import InputBar from "./components/InputBar";
 import "./App.css";
 
-const API = "";  // uses proxy
+const API = "https://gemini-chatbot-backend.onrender.com";
 
 export default function App() {
   const [chats, setChats] = useState([]); // [{ chatId, preview, messageCount }]
