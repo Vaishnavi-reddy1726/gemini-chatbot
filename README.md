@@ -4,7 +4,7 @@ A web-based chatbot built with Google's Gemini API. Supports text chat, PDF/TXT 
 
 \---
 
-## What's Inside
+ What's Inside
 
 ```
 gemini-chatbot/
@@ -14,9 +14,9 @@ gemini-chatbot/
 
 \---
 
-## Setup
+# Setup
 
-### 1\. Get a Gemini API Key
+ 1\. Get a Gemini API Key
 
 1. Go to [https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
 2. Click **Create API Key**
@@ -24,7 +24,7 @@ gemini-chatbot/
 
 \---
 
-### 2\. Set Up the Backend
+  2\. Set Up the Backend
 
 ```bash
 cd backend
@@ -40,7 +40,7 @@ PORT=5000
 
 \---
 
-### 3\. Set Up the Frontend
+3\. Set Up the Frontend
 
 ```bash
 cd frontend
@@ -53,7 +53,7 @@ npm install
 
 You need **two terminals** open at the same time.
 
-**Terminal 1 — Start the backend:**
+Terminal 1 — Start the backend:**
 
 ```bash
 cd backend
@@ -62,7 +62,7 @@ npm start
 
 Backend runs on `http://localhost:5000`
 
-**Terminal 2 — Start the frontend:**
+Terminal 2 — Start the frontend:**
 
 ```bash
 cd frontend
@@ -73,13 +73,13 @@ Frontend opens at `http://localhost:3000`
 
 \---
 
-## How to Use
+How to Use
 
-### Basic Chat
+Basic Chat
 
 * Type your message in the input box and press **Enter** (or click Send)
 
-### Upload a Document
+Upload a Document
 
 * Click the **Doc** button and select a `.pdf` or `.txt` file
 * After upload, ask questions like:
@@ -87,7 +87,7 @@ Frontend opens at `http://localhost:3000`
   * *"Summarize this document"*
   * *"What is the main topic?"*
 
-### Upload an Image
+Upload an Image
 
 * Click the **Image** button and select a `.png` or `.jpg` file
 * After upload, ask questions like:
@@ -95,20 +95,18 @@ Frontend opens at `http://localhost:3000`
   * *"What's in this image?"*
   * *"Describe what you see"*
 
-### Start a New Chat
+Start a New Chat
 
 * Click **+ New Chat** in the sidebar to clear everything and start fresh
 * Previous chat context and uploads are completely reset
 
 \---
 
-\## Preview
+Preview
 
+![Gemini Chatbot Interface](./Screenshot.png)
 
-
-!\[Gemini Chatbot Interface](./screenshot.png)
-
-## Notes
+Notes
 
 * Chat history is stored in memory only — it clears when the server restarts
 * No database or login required
