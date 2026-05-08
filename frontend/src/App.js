@@ -74,7 +74,7 @@ export default function App() {
       const errMsg = {
         id: uuidv4(),
         role: "model",
-        text: `❌ Error: ${err.response?.data?.error || err.message}`,
+        text: `Error: ${err.response?.data?.error || err.message}`,
         timestamp: new Date(),
         isError: true,
       };
