@@ -1,6 +1,13 @@
-# Gemini Chatbot
+✦ Gemini Chatbot
+A full-stack AI chatbot powered by Google's Gemini API. Supports text conversation, PDF/TXT document Q&A, and image analysis — all with multi-session chat management.
 
-A web-based chatbot built with Google's Gemini API. Supports text chat, PDF/TXT document upload, and image upload with full conversation context.
+🔗 Live Demo
+
+Frontend: https://gemini-chatbot-delta-seven.vercel.app
+Backend: https://gemini-chatbot-1u3p.onrender.com
+
+
+Note: Backend is hosted on Render free tier — first response after inactivity may take 30-40 seconds to wake up.# Gemini Chatbot
 
 \---
 
