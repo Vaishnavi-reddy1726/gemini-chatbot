@@ -46,7 +46,7 @@ app.post("/api/chat", async (req, res) => {
     }
 
     const session = getSession(chatId);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     // Build parts for this turn
     const userParts = [];
