@@ -30,7 +30,7 @@ export default function App() {
 
   const handleNewChat = async () => {
     try {
-      const res = await axios.post("/api/new-chat");
+      const res = await axios.post(`${API}/api/new-chat`);
       const { chatId } = res.data;
       const newChat = { chatId, preview: "New chat", messageCount: 0 };
       setChats(prev => [newChat, ...prev]);
@@ -67,7 +67,7 @@ export default function App() {
     ));
 
     try {
-      const res = await axios.post("/api/chat", { chatId: activeChatId, message: text });
+      const res = await axios.post(`${API}/api/chat", { chatId: activeChatId, message: text });
       const botMsg = { id: uuidv4(), role: "model", text: res.data.reply, timestamp: new Date() };
       setMessages(prev => [...prev, botMsg]);
     } catch (err) {
@@ -91,7 +91,7 @@ export default function App() {
     fd.append("file", file);
     fd.append("chatId", activeChatId);
     try {
-      const res = await axios.post("/api/upload/document", fd);
+      const res = await axios.post(`${API}/api/upload/document", fd);
       setUploadedDoc({ name: res.data.fileName, charCount: res.data.charCount });
       const sysMsg = {
         id: uuidv4(),
@@ -114,7 +114,7 @@ export default function App() {
     fd.append("file", file);
     fd.append("chatId", activeChatId);
     try {
-      const res = await axios.post("/api/upload/image", fd);
+      const res = await axios.post(`${API}/api/upload/image", fd);
       setUploadedImage({ name: res.data.fileName, previewUrl: res.data.previewUrl });
       const sysMsg = {
         id: uuidv4(),
